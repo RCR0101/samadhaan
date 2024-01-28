@@ -1,0 +1,23 @@
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .footer-text {
+    display: inline-block;
+    animation: marquee 5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  
