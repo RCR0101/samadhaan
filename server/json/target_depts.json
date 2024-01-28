@@ -1,0 +1,71 @@
+[
+    {
+        "id": "MOLBR",
+        "org_code": "MOLBR",
+        "year": "2024",
+        "state": "WB",
+        "total_complaints": 100,
+        "new_complaints": 20,
+        "resolved_complaints": 500,
+        "reopened_complaints": 300,
+        "feedback_score": 0.9
+    },
+    {
+        "id": "MODEF",
+        "org_code": "MODEF",
+        "year": "2024",
+        "state": "TN",
+        "total_complaints": 100,
+        "new_complaints": 20,
+        "resolved_complaints": 500,
+        "reopened_complaints": 300,
+        "feedback_score": 0.9
+    },
+    {
+        "id": "DEPOJ",
+        "org_code": "DEPOJ",
+        "year": "2024",
+        "state": "KN",
+        "total_complaints": 100,
+        "new_complaints": 20,
+        "resolved_complaints": 500,
+        "reopened_complaints": 300,
+        "feedback_score": 0.9
+    },
+    {
+        "id": "CEPFO",
+        "org_code": "CEPFO",
+        "year": "2024",
+        "state": "KN",
+        "total_complaints": 23,
+        "new_complaints": 23,
+        "in_process_complaints": 0,
+        "resolved_complaints": 0,
+        "reopened_complaints": 0,
+        "feedback_score": 0.0
+    },
+    {
+        "id": "MECPV",
+        "org_code": "MECPV",
+        "year": "2024",
+        "state": "KN",
+        "total_complaints": 13,
+        "new_complaints": 7,
+        "in_process_complaints": 0,
+        "resolved_complaints": 6,
+        "reopened_complaints": 0,
+        "feedback_score": 0.0
+    },
+    {
+        "id": "GOVUP",
+        "org_code": "GOVUP",
+        "year": "2024",
+        "state": "KN",
+        "total_complaints": 1,
+        "new_complaints": 0,
+        "in_process_complaints": 0,
+        "resolved_complaints": 1,
+        "reopened_complaints": 0,
+        "feedback_score": 0.0
+    }
+]

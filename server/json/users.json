@@ -1,0 +1,42 @@
+[
+    {
+        "id": "110124",
+        "UserCode": "110124",
+        "sex": "M",
+        "pincode": "203001",
+        "state": "KN",
+        "dist_name": "Bengaluru"
+    },
+    {
+        "id": "45427",
+        "UserCode": "45427",
+        "sex": "M",
+        "pincode": "203001",
+        "state": "WB",
+        "dist_name": "North 24 Parganas"
+    },
+    {
+        "id": "1092136",
+        "UserCode": "1092136",
+        "sex": "M",
+        "pincode": "440001",
+        "state": "MH",
+        "dist_name": "Nagpur"
+    },
+    {
+        "id": "19751",
+        "sex": "F",
+        "pincode": "560066",
+        "state": "KN",
+        "dist_name": "Benguluru",
+        "UserCode": "19751"
+    },
+    {
+        "id": "20051",
+        "sex": "M",
+        "pincode": "500078",
+        "state": "TS",
+        "dist_name": "Hyderabad",
+        "UserCode": "20051"
+    }
+]
