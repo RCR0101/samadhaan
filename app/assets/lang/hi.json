@@ -1,0 +1,15 @@
+{
+  "personal_info": "(व्यक्तिगत जानकारी)",
+  "financial_info": "(वित्तीय स्थिति)",
+  "name": "(नाम)",
+  "age": "(आयु)",
+  "occupation": "(व्यवसाय)",
+  "annual_income": "(वार्षिक आय)",
+  "education": "(शिक्षा)",
+  "family_status": "(पारिवारिक स्थिति)",
+  "address": "(पता)",
+  "phone_no": "(फोन नंबर)",
+  "bank_account": "(बैंक खाता)",
+  "loan": "(ऋण)",
+  "liabilities": "(देनदारियाँ)"
+}

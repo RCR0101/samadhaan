@@ -1,0 +1,23 @@
+# General
+.DS_Store
+*.lock
+*.log
+*.bak
+*.tmp
+*.swp
+
+# Flutter/Dart specific
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.generated_plugin_registrant.dart
+build/
+flutter_export_environment.sh
+
+# IDE specific (e.g., VSCode, IntelliJ)
+.idea/
+.vscode/
+*.iml
+
+# OS-specific files
+Thumbs.db
