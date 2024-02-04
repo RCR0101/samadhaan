@@ -4,12 +4,10 @@ import json
 from flask import jsonify
 from common_func import generate_id, load_dept_json_file, load_json_file, save_dept_json_file, save_json_file, update_dept_status
 from enhance_complaint import enhance_complaint
-from new_pred import set_new_predict_pipe
-from predict_dept_text import set_predict_pipe
-from rephrase_text import init_rephrase_model, init_summarize_model
-from sentiment_text import init_sentiment_model
-
-from severity_text import init_severity_model
+from predict_depart import TextClassifier 
+from infer_severity import TextProcessor 
+# from predict_depart import TextClassifier
+# from get_severity import TextProcessor
 
 def process_records():
     try:
@@ -45,9 +43,7 @@ def main():
       
         
 def enhance_grievance(new_data):
-    json_d = enhance_complaint(sev_model, predict_pipe_model, 
-        sentiment_model, rephrase_model, summarize_model, 
-        new_data)
+    json_d = enhance_complaint(new_data, text_processor, text_classifier)
     attributes = json.loads(json_d)
     return attributes
 
@@ -78,11 +74,13 @@ def get_total_complaints(org_code, state):
     dept_data = load_dept_json_file()
     return 0
 
-sev_model = init_severity_model()
-predict_pipe_model = set_new_predict_pipe()
-sentiment_model = init_sentiment_model()
-rephrase_model = init_rephrase_model()
-summarize_model = init_summarize_model()
+# sev_model = init_severity_model()
+# predict_pipe_model = set_new_predict_pipe()
+# sentiment_model = init_sentiment_model()
+# rephrase_model = init_rephrase_model()
+# summarize_model = init_summarize_model()
+text_processor = TextProcessor()
+text_classifier = TextClassifier()
 
 
 if __name__ == "__main__":

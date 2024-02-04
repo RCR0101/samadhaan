@@ -6,15 +6,15 @@ import requests
 from flask_cors import CORS
 from requests.auth import HTTPBasicAuth
 from urllib.parse import unquote
-from common_func import clean_text, generate_id, get_diary_date, load_user_json_file, save_dept_json_file, update_dept_status
-from enhance_complaint import enhance_complaint
-from predict_dept_text import set_predict_pipe
-from rephrase_text import init_rephrase_model, init_summarize_model
-from sentiment_text import init_sentiment_model
-from severity_text import init_severity_model
+from common_func import clean_text, generate_id, get_diary_date, load_user_json_file, save_dept_json_file, update_dept_status, load_dept_json_file, load_json_file, save_json_file
+# from enhance_complaint import enhance_complaint
+# from predict_dept_text import set_predict_pipe
+# from rephrase_text import init_rephrase_model, init_summarize_model
+# from sentiment_text import init_sentiment_model
+# from severity_text import init_severity_model
 
-from common_func import load_dept_json_file, load_json_file, save_json_file
-from predict_dept_text import set_predict_pipe
+# from common_func import load_dept_json_file, load_json_file, save_json_file
+# from predict_dept_text import set_predict_pipe
 
 app = Flask(__name__)
 CORS(app)
@@ -23,7 +23,7 @@ CORS(app)
 
 @app.route('/Complaints', methods=['GET'])
 def get_json():
-    # data = load_json_file()
+    data = load_json_file()
     
     # Get pagination parameters from request, default is first 10 items
     start = int(request.args.get('start', 0))
@@ -60,7 +60,7 @@ def get_specific_json(id):
 
 @app.route('/Complaints/User/<user_code>', methods=['GET'])
 def get_complaints_by_user(user_code):
-    # data = load_json_file()
+    data = load_json_file()
     filtered_data = [
         {'registration_no': item['id'], 'status': item['status']}
         for item in data if item['UserCode'] == user_code and (item['status'] == "2" or item['status'] == "3")

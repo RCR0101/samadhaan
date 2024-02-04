@@ -1,28 +1,28 @@
 import json
 from common_func import clean_text
-from predict_dept_text import set_predict_pipe
-from rephrase_text import init_rephrase_model, init_summarize_model
-from sentiment_text import init_sentiment_model
-from severity_text import init_severity_model
+from predict_depart import TextClassifier
+from infer_severity import TextProcessor
 
-def enhance_complaint(sev_model, predict_pipe_model, sentiment_model, rephrase_model, summarize_model, text):
+def enhance_complaint(text, processor, classifier):
     c_text = clean_text(text)
-    sentiment_value = sentiment_model(c_text)
-    severity_value = sev_model.predict([c_text])
-    predict_dept_value = predict_pipe_model.predict([c_text])
-    response = rephrase_model(c_text, max_length=100, num_beams=5, early_stopping=True)
-    rephrase_value = response[0]['generated_text']
-    summary = summarize_model(c_text, max_length=100, min_length=30, do_sample=False)
-    summary_value = summary[0]['summary_text']
-
+    # sentiment_value = sentiment_model(c_text)
+    # severity_value = sev_model.predict([c_text])
+    # predict_dept_value = predict_pipe_model.predict([c_text])
+    # response = rephrase_model(c_text, max_length=100, num_beams=5, early_stopping=True)
+    # rephrase_value = response[0]['generated_text']
+    # # summary = summarize_model(c_text, max_length=100, min_length=30, do_sample=False)
+    summary_text = processor.get_summary_text(text)
+    severity_value = processor.get_severity(summary_text)
+    dept_json = json.loads(classifier.predict_dept(text))
+    print(severity_value)
+    print(dept_json)
     # Creating a dictionary with all values
     data = {
         "clean_text": c_text,
-        "sentiment": sentiment_value,
-        "severity": severity_value[0],
-        "predicted_dept": predict_dept_value[0],
-        "rephrased_text": rephrase_value,
-        "summary": summary_value
+        "severity": severity_value,
+        "predicted_dept": dept_json["dept_code"],
+        "predicted_dept_confidence": dept_json["confidence"],
+        "summary": summary_text
     }
 
     # Convert the dictionary to a JSON string
