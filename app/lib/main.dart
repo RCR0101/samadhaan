@@ -24,10 +24,10 @@ class MyApp extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      supportedLocales: const [
-        Locale('hi', 'IN'), // Hindi
-        // Add other locales if needed
-      ],
+      // supportedLocales: const [
+      //   Locale('hi', 'IN'), // Hindi
+      //   // Add other locales if needed
+      // ],
       title: 'Samadhaan',
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,

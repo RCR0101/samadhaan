@@ -1,13 +1,4 @@
-import {
-  ArrayInput,
-  DateInput,
-  Edit,
-  EditProps,
-  NumberInput,
-  SimpleForm,
-  SimpleFormIterator,
-  TextInput,
-} from "react-admin";
+import { DateInput, Edit, EditProps, SimpleForm, TextInput } from "react-admin";
 
 const ComplaintResponse: React.FC<EditProps> = (props) => (
   <Edit {...props} title={"Edit"}>
@@ -33,19 +24,30 @@ const ComplaintResponse: React.FC<EditProps> = (props) => (
           <TextInput source="UserCode" />
           {/* <TextInput source="status" /> */}
           <TextInput source="OfficerDetail" />
-
-          {/* Attributes Section */}
-          <TextInput source="attributes.severity" label="Severity" disabled />
           <TextInput source="attributes.predicted_dept" label="Department" />
+          <TextInput
+            source="attributes.predicted_dept_confidence"
+            label="Dept Prediction Confidence"
+          />
+          {/* Attributes Section */}
+          <TextInput
+            multiline
+            source="attributes.severity"
+            label="Severity"
+            fullWidth
+            disabled
+          />
+
+          {/* <TextInput source="attributes.severity" label="Severity" disabled /> */}
 
           {/* Sentiment Section */}
           {/* For ArrayInput, consider if you want it in a single column or split */}
-          <ArrayInput source="attributes.sentiment" label="Sentiment" disabled>
+          {/* <ArrayInput source="attributes.sentiment" label="Sentiment" disabled>
             <SimpleFormIterator>
               <TextInput source="label" />
               <NumberInput source="score" />
             </SimpleFormIterator>
-          </ArrayInput>
+          </ArrayInput> */}
         </div>
 
         <div style={{ flex: 1 }}>
@@ -57,12 +59,7 @@ const ComplaintResponse: React.FC<EditProps> = (props) => (
             fullWidth
             disabled
           />
-          <TextInput
-            multiline
-            source="remarks_text"
-            label="Response"
-            fullWidth
-          />
+
           <TextInput
             multiline
             source="attributes.summary"
@@ -72,11 +69,17 @@ const ComplaintResponse: React.FC<EditProps> = (props) => (
           />
           <TextInput
             multiline
+            source="remarks_text"
+            label="Add Response Here"
+            fullWidth
+          />
+          {/* <TextInput
+            multiline
             source="attributes.rephrased_text"
             label="Rephrased Text"
             fullWidth
             disabled
-          />
+          /> */}
         </div>
       </div>
     </SimpleForm>

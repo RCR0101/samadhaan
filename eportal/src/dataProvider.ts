@@ -5,7 +5,7 @@ import { DataProvider, DeleteManyParams, DeleteManyResult, DeleteParams, DeleteR
 import { CreateParams, CreateResult } from 'react-admin';
 
 const httpClient = fetchUtils.fetchJson;
- const apiUrl =  'http://localhost:5008';
+const apiUrl =  'http://192.168.1.51:5008';
 //const apiUrl = process.env.VITE_JSON_SERVER_URL;
 
 
@@ -46,7 +46,7 @@ const myDataProvider: DataProvider = {
     params: UpdateParams<any>
 ): Promise<UpdateResult<RecordType>> {
     // Construct the URL
-    const url = `http://localhost:5008/${resource}`;
+    const url = `${apiUrl}/${resource}`;
     //const url = `http://localhost:5008/${resource}`;
     // Make the HTTP PUT request
     const response = await fetch(url, {
@@ -83,8 +83,9 @@ const myDataProvider: DataProvider = {
                        ResultRecordType extends RaRecord<Identifier> = RecordType & { id: Identifier; }>
                        (resource: string, params: CreateParams<any>): Promise<CreateResult<ResultRecordType>> {
     // Construct the URL
-    const url = `http://localhost:5008/${resource}`;
+    // const url = `http://localhost:5008/${resource}`;
     //const url = `http://localhost:5008/${resource}`;
+    const url = `${apiUrl}/${resource}`;
     // Make the HTTP PUT request
     const response = await fetch(url, {
         method: 'POST',
