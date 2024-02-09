@@ -7,14 +7,6 @@ from flask_cors import CORS
 from requests.auth import HTTPBasicAuth
 from urllib.parse import unquote
 from common_func import clean_text, generate_id, get_diary_date, load_user_json_file, save_dept_json_file, update_dept_status, load_dept_json_file, load_json_file, save_json_file
-# from enhance_complaint import enhance_complaint
-# from predict_dept_text import set_predict_pipe
-# from rephrase_text import init_rephrase_model, init_summarize_model
-# from sentiment_text import init_sentiment_model
-# from severity_text import init_severity_model
-
-# from common_func import load_dept_json_file, load_json_file, save_json_file
-# from predict_dept_text import set_predict_pipe
 
 app = Flask(__name__)
 CORS(app)
@@ -182,10 +174,11 @@ def update_json():
         data.append(new_data)
     elif request.method == 'PUT':
         for item in data:
-            if item['id'] == new_data['id']:
+            if item['registration_no'] == new_data['id']:
                 new_data["status"] = "3"
                 new_data["resolution_date"]= get_diary_date()
                 item.update(new_data)
+                # data.update(item)
                 update_dept_status(item['org_code'], "RESOLVE")
                 break
             
