@@ -91,5 +91,29 @@
         "resolved_complaints": 1,
         "reopened_complaints": 0,
         "feedback_score": 0.0
+    },
+    {
+        "id": "NTADR",
+        "org_code": "NTADR",
+        "year": "2024",
+        "state": "KN",
+        "total_complaints": 1,
+        "new_complaints": 0,
+        "in_process_complaints": 0,
+        "resolved_complaints": 1,
+        "reopened_complaints": 0,
+        "feedback_score": 0.0
+    },
+    {
+        "id": "IITGU",
+        "org_code": "IITGU",
+        "year": "2024",
+        "state": "KN",
+        "total_complaints": 4,
+        "new_complaints": 3,
+        "in_process_complaints": 0,
+        "resolved_complaints": 1,
+        "reopened_complaints": 0,
+        "feedback_score": 0.0
     }
 ]

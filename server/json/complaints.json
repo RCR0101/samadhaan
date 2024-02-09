@@ -395,5 +395,48 @@
         "remarks_text": "",
         "resolution_date": "",
         "registration_no": "GOVUP/E/2024/0000002"
+    },
+    {
+        "id": "NTADR/E/2024/0000001",
+        "title": "Samadhaan Test Grievance",
+        "subject_content_text": "Missed my admit card for 2024 IIT exams. Can you issue new one on urgent basis",
+        "status": "3",
+        "UserCode": "20319",
+        "org_code": "NTADR",
+        "attributes": {
+            "clean_text": "missed admit card 2024 iit exam issue new one urgent basis",
+            "predicted_dept": "NTADR",
+            "predicted_dept_confidence": 0.12784454226493835
+        },
+        "DiaryDate": {
+            "$date": "2024-02-08T13:41:11.735923Z"
+        },
+        "remarks_text": "We will issue new card by speed post delivery. All the best - Nodal Officer",
+        "resolution_date": {
+            "$date": "2024-02-08T14:23:13.946521Z"
+        },
+        "registration_no": "NTADR/E/2024/0000001",
+        "OfficerDetail": "Rajana Daas"
+    },
+    {
+        "id": "IITGU/E/2024/0000004",
+        "title": "Samadhaan New Grievance",
+        "subject_content_text": "Hello Sir, I am student appearing in IIT Mains in Feb 2024. I lost my admit card. Request you to issue it at earliest convienience ",
+        "status": "3",
+        "UserCode": "20319",
+        "org_code": "IITGU",
+        "attributes": {
+            "clean_text": "hello sir student appearing iit main feb 2024 lost admit card request issue earliest convienience",
+            "predicted_dept": "IITGU",
+            "predicted_dept_confidence": 0.14495138823986053
+        },
+        "DiaryDate": {
+            "$date": "2024-02-08T14:04:38.267761Z"
+        },
+        "remarks_text": "I am checking what is happening",
+        "resolution_date": {
+            "$date": "2024-02-08T14:19:41.890068Z"
+        },
+        "registration_no": "IITGU/E/2024/0000004"
     }
 ]

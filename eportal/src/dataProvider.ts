@@ -5,7 +5,7 @@ import { DataProvider, DeleteManyParams, DeleteManyResult, DeleteParams, DeleteR
 import { CreateParams, CreateResult } from 'react-admin';
 
 const httpClient = fetchUtils.fetchJson;
-const apiUrl =  'http://192.168.1.51:5008';
+const apiUrl =  'http://192.168.0.197:5008';
 //const apiUrl = process.env.VITE_JSON_SERVER_URL;
 
 

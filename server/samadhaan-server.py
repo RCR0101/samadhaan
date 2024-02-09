@@ -46,7 +46,7 @@ def get_json():
 
 @app.route('/Complaints/<path:id>', methods=['GET'])
 def get_specific_json(id):
-    # data = load_json_file()
+    data = load_json_file()
     # decoded_id = unquote(id)
     specific_item = next((item for item in data if item['id'] == id), None)
 
