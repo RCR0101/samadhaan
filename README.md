@@ -18,8 +18,77 @@ Samadhaan is an AI/ML-driven grievance management system designed to facilitate 
 - **User & Department Management:** Endpoints for user and department details retrieval and creation.
 
 ### Detailed Endpoints
-(Include a concise list of endpoints with brief descriptions, methods, and response formats.)
+(Include a concise list of endpoints with brief descriptions, methods, and response formats.)### REST API Endpoints Documentation
 
+#### 1. Get All Complaints
+- **Endpoint:** `/Complaints`
+- **Method:** `GET`
+- **Description:** Retrieves a list of all complaints in the system.
+- **Request Parameters:** None
+- **Response:** Returns a JSON array of complaints.
+
+#### 2. Get Complaint by ID
+- **Endpoint:** `/Complaints/<path:id>`
+- **Method:** `GET`
+- **Description:** Fetches a specific complaint by its unique ID.
+- **Request Parameters:** `id` - The unique identifier of the complaint.
+- **Response:** Returns a JSON object of the complaint details.
+
+#### 3. Get Complaints by User Code
+- **Endpoint:** `/Complaints/User/<user_code>`
+- **Method:** `GET`
+- **Description:** Retrieves all complaints associated with a specific user, identified by a unique user code.
+- **Request Parameters:** `user_code` - The unique code of the user.
+- **Response:** Returns a JSON array of complaints linked to the specified user.
+
+#### 4. Get All Departments
+- **Endpoint:** `/Departments`
+- **Method:** `GET`
+- **Description:** Fetches a list of all departments registered in the system.
+- **Request Parameters:** None
+- **Response:** Returns a JSON array of departments.
+
+#### 5. Get All Users
+- **Endpoint:** `/Users`
+- **Method:** `GET`
+- **Description:** Retrieves a list of all users in the system.
+- **Request Parameters:** None
+- **Response:** Returns a JSON array of users.
+
+#### 6. Create a New User
+- **Endpoint:** `/Users`
+- **Method:** `POST`
+- **Description:** Registers a new user in the system.
+- **Request Parameters:** JSON object containing user details (e.g., name, email, user_code).
+- **Response:** Returns a confirmation of the user creation with the user's details.
+
+#### 7. Get Department by ID
+- **Endpoint:** `/Departments/<int:id>`
+- **Method:** `GET`
+- **Description:** Fetches details of a specific department by its unique ID.
+- **Request Parameters:** `id` - The unique identifier of the department.
+- **Response:** Returns a JSON object of the department's details.
+
+#### 8. Get User by ID
+- **Endpoint:** `/Users/<id>`
+- **Method:** `GET`
+- **Description:** Retrieves details of a specific user by their unique ID.
+- **Request Parameters:** `id` - The unique identifier of the user.
+- **Response:** Returns a JSON object of the user's details.
+
+#### 9. Create or Update a Complaint
+- **Endpoint:** `/Complaints`
+- **Method:** `POST`, `PUT`
+- **Description:** Allows for the creation of a new complaint or updating an existing one. Use `POST` for creating and `PUT` for updating.
+- **Request Parameters:** JSON object containing complaint details. For `PUT`, include the complaint ID to update.
+- **Response:** Returns a confirmation of the complaint creation or update with the complaint's details.
+
+### Notes:
+- All `GET` requests might support query parameters for filtering, sorting, or pagination, which are not specified here.
+- The `POST` and `PUT` methods expect requests to be made with a content type of `application/json` and the body of the request to contain a valid JSON object according to the endpoint's requirements.
+- For the `POST` method on `/Users` and `/Complaints`, the server returns the created object with an assigned unique ID.
+- Authentication and authorization mechanisms are not covered in this documentation but are essential for protecting sensitive endpoints and data.
+  
 ## Software Used
 - **App:** Flutter
 - **Server:** Python
