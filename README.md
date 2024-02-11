@@ -1,7 +1,7 @@
 # Samadhaan
 
 ## Introduction
-Samadhaan is an AI/ML-driven grievance management system designed to facilitate the auto-categorization of grievance reports and assist citizens with common queries via a ministry-specific chatbot. This system aims to streamline the grievance handling process by providing an efficient way to categorize, track, and respond to grievances.
+Samadhaan is an AI/ML-driven grievance management system designed to facilitate the auto-categorization of grievance reports and assist citizens with common queries via Samadhaan App. This system aims to streamline the grievance handling process by providing an efficient way to categorize, track, and respond to grievances.
 
 ## Problem Statements
 - **Problem Statement 1:** Develop an AI/ML-driven system for topic clustering/modelling to enable auto-categorisation of received grievance reports.
