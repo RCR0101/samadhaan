@@ -115,7 +115,7 @@ Samadhaan is an AI/ML-driven grievance management system designed to facilitate 
 - For Mac: Activate `conda` environment and run `samadhaan-server.py` and `grievance_enhancer.py`.
 - Models:
   a) Hugging Face Zephr and Samadhaan Fine Trained models are too large to be committed in github. Create models folder under server and download from hugging face (TheBloke/zephyr-7B-beta-GGUF) and save in models/hf-zephyr.
-  b) Department Prediction Model: Request dalmia.aryan@gmail.com to upload the copy of this model. Save in models/predict_dept folder
+  b) Department Prediction Model: Send me an email to upload the copy of this model. Save in models/predict_dept folder
 
 ## Contributing
 We welcome contributions! Please read our contributing guide to learn how you can help improve Samadhaan.
