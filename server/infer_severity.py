@@ -15,7 +15,14 @@ class TextProcessor:
 
     def get_severity(self, txt_msg):
         # Use the preloaded LLM to evaluate severity
-        prompt_txt = "provide severity value from the list 'Critical', 'Endanger', 'Exam Related', 'Malpractice', 'Suggestion' for text: " + txt_msg
+        prompt_txt = f"""Prompt:
+
+        Based on the given text, please infer the severity of the grievance. Assign one of the following categories: 'Critical', 'Endanger', 'Exam Related', 'Malpractice', or 'Suggestion'.
+
+        Text: {txt_msg}"""
+
+        print(prompt_txt)
+
         response_text = self.llm(prompt_txt)
         return response_text
 

@@ -157,7 +157,8 @@ def get_specific_user_json(id):
 @app.route('/Complaints', methods=['POST', 'PUT'])
 def update_json():
     new_data = request.get_json()
-
+    data = load_json_file()
+    print(new_data)
     if request.method == 'POST':
         dept_code = "TBD" 
         # enhance_grievance(new_data)
@@ -174,6 +175,7 @@ def update_json():
         data.append(new_data)
     elif request.method == 'PUT':
         for item in data:
+            print(item)
             if item['registration_no'] == new_data['id']:
                 new_data["status"] = "3"
                 new_data["resolution_date"]= get_diary_date()

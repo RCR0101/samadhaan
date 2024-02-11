@@ -6,8 +6,7 @@ from common_func import generate_id, load_dept_json_file, load_json_file, save_d
 from enhance_complaint import enhance_complaint
 from predict_depart import TextClassifier 
 from infer_severity import TextProcessor 
-# from predict_depart import TextClassifier
-# from get_severity import TextProcessor
+
 
 def process_records():
     try:
@@ -39,7 +38,7 @@ def main():
         print("Checking for records...")
         process_records()
         print("Waiting for 10 minutes before next check...")
-        time.sleep(100)  # Wait for 10 minutes (600 seconds)
+        time.sleep(50)  # Wait for 10 minutes (600 seconds)
       
         
 def enhance_grievance(new_data):
@@ -74,11 +73,6 @@ def get_total_complaints(org_code, state):
     dept_data = load_dept_json_file()
     return 0
 
-# sev_model = init_severity_model()
-# predict_pipe_model = set_new_predict_pipe()
-# sentiment_model = init_sentiment_model()
-# rephrase_model = init_rephrase_model()
-# summarize_model = init_summarize_model()
 text_processor = TextProcessor()
 text_classifier = TextClassifier()
 

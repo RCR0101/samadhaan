@@ -61,10 +61,10 @@
         "org_code": "GOVUP",
         "year": "2024",
         "state": "KN",
-        "total_complaints": 2,
-        "new_complaints": 1,
+        "total_complaints": 5,
+        "new_complaints": 2,
         "in_process_complaints": 0,
-        "resolved_complaints": 1,
+        "resolved_complaints": 3,
         "reopened_complaints": 0,
         "feedback_score": 0.0
     },
@@ -113,6 +113,30 @@
         "new_complaints": 3,
         "in_process_complaints": 0,
         "resolved_complaints": 1,
+        "reopened_complaints": 0,
+        "feedback_score": 0.0
+    },
+    {
+        "id": "MEAPD",
+        "org_code": "MEAPD",
+        "year": "2024",
+        "state": "KN",
+        "total_complaints": 1,
+        "new_complaints": 0,
+        "in_process_complaints": 0,
+        "resolved_complaints": 1,
+        "reopened_complaints": 0,
+        "feedback_score": 0.0
+    },
+    {
+        "id": "CSIRH",
+        "org_code": "CSIRH",
+        "year": "2024",
+        "state": "KN",
+        "total_complaints": 2,
+        "new_complaints": 0,
+        "in_process_complaints": 0,
+        "resolved_complaints": 2,
         "reopened_complaints": 0,
         "feedback_score": 0.0
     }

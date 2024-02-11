@@ -438,5 +438,110 @@
             "$date": "2024-02-08T14:19:41.890068Z"
         },
         "registration_no": "IITGU/E/2024/0000004"
+    },
+    {
+        "id": "GOVUP/E/2024/0000004",
+        "title": "Samadhaan Griavance Title",
+        "subject_content_text": "Dear Sir,\n\nI am writing with utmost concern about one grave wrong doing by one of the officials. He is ill-treating the poor people on the road. Kindly look into the matter. He operates from XXXX. and is seen every day at XX",
+        "status": "3",
+        "UserCode": "20319",
+        "org_code": "GOVUP",
+        "attributes": {
+            "clean_text": "dear sir writing utmost concern one grave wrong one official illtreating poor people road kindly look matter operates xxxx seen every day xx",
+            "predicted_dept": "GOVUP",
+            "predicted_dept_confidence": 0.7169676423072815
+        },
+        "DiaryDate": {
+            "$date": "2024-02-09T14:33:52.677115Z"
+        },
+        "remarks_text": "ok... now on 4th time.... ",
+        "resolution_date": {
+            "$date": "2024-02-09T14:49:38.319268Z"
+        },
+        "registration_no": "GOVUP/E/2024/0000004"
+    },
+    {
+        "id": "GOVUP/E/2024/0000005",
+        "title": "My concerns",
+        "subject_content_text": "Hum apse nivedan karte hain ki shehar ki safai vyavastha mein bhrashtachar aur anadekhi ki samasya ko turant dekha jaye. Jaise, XYZ colony mein kachre ka anbar lagatar ek mahine se nahi hata hai, jis se bimariyon ka phailav ho raha hai aur log pareshan hain. Kripya is par dhyan dekar uchit kadam uthayein, taaki nagrik swachh aur swasth vaatavaran mein jeewan yapan kar sakein.",
+        "status": "3",
+        "UserCode": "20319",
+        "org_code": "GOVUP",
+        "attributes": {
+            "clean_text": "hum apse nivedan karte hain ki shehar ki safai vyavastha mein bhrashtachar aur anadekhi ki samasya ko turant dekha jaye jaise xyz colony mein kachre ka anbar lagatar ek mahine se nahi hata hai ji se bimariyon ka phailav ho raha hai aur log pareshan hain kripya par dhyan dekar uchit kadam uthayein taaki nagrik swachh aur swasth vaatavaran mein jeewan yapan kar sakein",
+            "predicted_dept": "GOVUP",
+            "predicted_dept_confidence": 0.5266873836517334
+        },
+        "DiaryDate": {
+            "$date": "2024-02-11T04:05:51.277390Z"
+        },
+        "remarks_text": "ok we are checking",
+        "resolution_date": {
+            "$date": "2024-02-11T04:15:18.475443Z"
+        },
+        "registration_no": "GOVUP/E/2024/0000005"
+    },
+    {
+        "id": "MEAPD/E/2024/0000001",
+        "title": "My Concerns - II",
+        "subject_content_text": "Respected Government, me want to speak about corruption problem in our area. Many peoples are facing issues because local office asking for bribe to do work which should be free. Example, for getting passport, they demand money else they make delay on purpose. This not fair, please to take action for stop this.",
+        "status": "3",
+        "UserCode": "20319",
+        "org_code": "MEAPD",
+        "attributes": {
+            "clean_text": "respected government want speak corruption problem area many people facing issue local office asking bribe work free example getting passport demand money else make delay purpose fair please take action stop",
+            "predicted_dept": "MEAPD",
+            "predicted_dept_confidence": 0.10182436555624008
+        },
+        "DiaryDate": {
+            "$date": "2024-02-11T04:18:47.874946Z"
+        },
+        "remarks_text": "working on it",
+        "resolution_date": {
+            "$date": "2024-02-11T04:48:47.804481Z"
+        },
+        "registration_no": "MEAPD/E/2024/0000001"
+    },
+    {
+        "id": "CSIRH/E/2024/0000001",
+        "title": "Test it now!!",
+        "subject_content_text": "I am writing to express my deep concern regarding the recent incident that occurred in the chemistry laboratory. The lack of proper safety measures and negligence of the lab assistant have put the lives of students at risk. The chemicals used were not handled with caution, resulting in a small explosion that caused minor injuries to a few students. This incident highlights a serious safety issue that needs immediate attention. I urge the authorities to take strict action against the lab assistant responsible for this endangerment and ensure that such incidents do not occur in the future. The safety of students should be the top priority, and it is crucial to implement stricter safety protocols in the laboratory",
+        "status": "3",
+        "UserCode": "20319",
+        "org_code": "CSIRH",
+        "attributes": {
+            "clean_text": "writing express deep concern regarding recent incident occurred chemistry laboratory lack proper safety measure negligence lab assistant put life student risk chemical used handled caution resulting small explosion caused minor injury student incident highlight serious safety issue need immediate attention urge authority take strict action lab assistant responsible endangerment ensure incident occur future safety student top priority crucial implement stricter safety protocol laboratory",
+            "predicted_dept": "CSIRH",
+            "predicted_dept_confidence": 0.0392521396279335
+        },
+        "DiaryDate": {
+            "$date": "2024-02-11T04:35:12.219595Z"
+        },
+        "remarks_text": "I am close to be ready!!!",
+        "resolution_date": {
+            "$date": "2024-02-11T04:37:46.072214Z"
+        },
+        "registration_no": "CSIRH/E/2024/0000001"
+    },
+    {
+        "id": "CSIRH/E/2024/0000002",
+        "title": "basic bugs",
+        "subject_content_text": "I am writing to express my deep concern regarding the recent incident that occurred in the chemistry laboratory. The lack of proper safety measures and negligence of the lab assistant have put the lives of students at risk. The chemicals used were not handled with caution, resulting in a small explosion that caused minor injuries to a few students. This incident highlights a serious safety issue that needs immediate attention. I urge the authorities to take strict action against the lab assistant responsible for this endangerment and ensure that such incidents do not occur in the future. The safety of students should be the top priority, and it is crucial to implement stricter safety protocols in the laboratory",
+        "status": "3",
+        "UserCode": "20319",
+        "org_code": "CSIRH",
+        "attributes": {
+            "clean_text": "writing express deep concern regarding recent incident occurred chemistry laboratory lack proper safety measure negligence lab assistant put life student risk chemical used handled caution resulting small explosion caused minor injury student incident highlight serious safety issue need immediate attention urge authority take strict action lab assistant responsible endangerment ensure incident occur future safety student top priority crucial implement stricter safety protocol laboratory",
+            "predicted_dept": "CSIRH",
+            "predicted_dept_confidence": 0.0392521396279335
+        },
+        "DiaryDate": {
+            "$date": "2024-02-11T04:46:14.176333Z"
+        },
+        "remarks_text": "yeah... this will be fixed soon",
+        "resolution_date": {
+            "$date": "2024-02-11T04:47:30.421727Z"
+        },
+        "registration_no": "CSIRH/E/2024/0000002"
     }
 ]
